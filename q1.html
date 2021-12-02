@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Input</title>
+</head>
+
+<body style="background-color:#cc6699;">
+
+<body>
+
+<h1 style="color:white;"> What year was Sam born </h1>
+</br>
+
+ <input id="input001" type="text" /><button onclick="btn001()">Confirm</button>
+ <p id="message001"></p>
+
+<script>
+function btn001() {
+var text001;
+var colors001 = input001.value;
+switch (colors001) {
+case "2007":
+text001 = "Incorrect, refresh.";
+break;
+case "2008":
+    location.href = 'https://www.w3schools.com/html/default.asp';
+    break;
+    default:
+            text001 = "Incorrect, refresh.";
+}
+document.getElementById("message001").innerHTML = text001;
+}
+</script>
+</body>
+</html>
